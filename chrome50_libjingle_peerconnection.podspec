@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
-  s.name         = "gate_libjingle_peerconnection"
-  s.version      = "1.50.1"
+  s.name         = "chrome50_libjingle_peerconnection"
+  s.version      = "1.0.50"
   s.summary      = "WebRTC Video Streaming Peer Connection API's. An iOS WebRTC demo application hosted on App Engine. Builds by Pristine.io"
   s.description      = <<-DESC
                        The WebRTC native APIs are implemented based on the following [WebRTC spec.](http://dev.w3.org/2011/webrtc/editor/webrtc.html) 
@@ -10,17 +10,16 @@ Pod::Spec.new do |s|
                        The target audience of this document are those who want to use WebRTC Native APIs to develop native RTC applications.
                        DESC
   s.homepage     = "https://github.com/pristineio/webrtc-build-scripts"
-  s.ios.platform = :ios, '7.0'
+  s.platform = :ios, '7.0'
   s.author       = { "Rahul Behera" => "rahul@pristine.io" }
   s.social_media_url = 'https://twitter.com/bot_the_builder'
-  s.source       = { :git => 'https://github.com/chamara-dev/gate_libjingle_peerconnection.git', :tag => '1.50.1' }
-  s.ios.source_files =  'libjingle_peerconnection/Headers/*.h'
-  s.ios.public_header_files = "libjingle_peerconnection/Headers/*.h"
-  s.ios.preserve_paths = 'libjingle_peerconnection/libWebRTC.a'
-  s.ios.vendored_libraries = 'libjingle_peerconnection/libWebRTC.a'
-  s.ios.deployment_target = '7.0'
+  s.source       = { :git => 'https://github.com/chamara-dev/gate_libjingle_peerconnection.git', :tag => '1.0.50' }
   s.source_files =  'libjingle_peerconnection/Headers/*.h'
-  s.ios.framework = 'AVFoundation', 'AudioToolbox', 'CoreGraphics', 'CoreMedia', 'GLKit', 'UIKit', 'VideoToolbox'
+  s.public_header_files = "libjingle_peerconnection/Headers/*.h"
+  s.preserve_paths = 'libjingle_peerconnection/libWebRTC.a'
+  s.vendored_libraries = 'libjingle_peerconnection/libWebRTC.a'
+  s.source_files =  'libjingle_peerconnection/Headers/*.h'
+  s.framework = 'AVFoundation', 'AudioToolbox', 'CoreGraphics', 'CoreMedia', 'GLKit', 'UIKit', 'VideoToolbox'
   s.libraries = 'c', 'sqlite3', 'stdc++'
   s.requires_arc = true
   s.xcconfig  =  { 'LIBRARY_SEARCH_PATHS' => '"$(PODS_ROOT)/libjingle_peerconnection"',
