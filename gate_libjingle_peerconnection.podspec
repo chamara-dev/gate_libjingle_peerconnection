@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
   s.ios.platform = :ios, '7.0'
   s.author       = { "Rahul Behera" => "rahul@pristine.io" }
   s.social_media_url = 'https://twitter.com/bot_the_builder'
-  s.source       = { :http => "https://github.com/chamara-dev/gate_libjingle_peerconnection/blob/master/libWebRTC.tar" }
+  s.source       = { :git => 'https://github.com/chamara-dev/gate_libjingle_peerconnection.git' }
   s.ios.source_files =  'libjingle_peerconnection/Headers/*.h'
   s.ios.public_header_files = "libjingle_peerconnection/Headers/*.h"
   s.ios.preserve_paths = 'libjingle_peerconnection/libWebRTC.a'
