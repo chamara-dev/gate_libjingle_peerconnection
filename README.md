@@ -13,8 +13,3 @@ H264 encoding enabled for iOS
 
 Please find the original pod below
 	https://cocoapods.org/?q=libjingle_peerconnection
-	
-	
-	
-	
-	
