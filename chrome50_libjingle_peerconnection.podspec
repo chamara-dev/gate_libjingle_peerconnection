@@ -9,9 +9,9 @@ Pod::Spec.new do |s|
 
                        The target audience of this document are those who want to use WebRTC Native APIs to develop native RTC applications.
                        DESC
-  s.homepage     = "https://github.com/pristineio/webrtc-build-scripts"
+  s.homepage     = "https://github.com/pristineio/webrtc-build-scripts, https://github.com/chamara-dev/webrtc-build-scripts"
   s.platform = :ios, '7.0'
-  s.author       = { "Rahul Behera" => "rahul@pristine.io" }
+  s.author       = { "Rahul Behera" => "rahul@pristine.io", "Chamara Dev" }
   s.social_media_url = 'https://twitter.com/bot_the_builder'
   s.source       = { :git => 'https://github.com/chamara-dev/gate_libjingle_peerconnection.git', :tag => '1.0.50' }
   s.source_files =  'libjingle_peerconnection/Headers/*.h'
